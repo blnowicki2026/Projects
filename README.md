@@ -1,4 +1,4 @@
-# Projects
+![image](https://github.com/user-attachments/assets/6befa854-adcc-4977-9042-c080f43e0365)# Projects
 
 ## Frequency Detector Design Project
 For this project I built a circuit turned on a LED when a 25 kHz frequency was transmitted and blocked all other frequencys. To do this I built my circuit with 3 phases. 
@@ -50,4 +50,24 @@ Calculate new resistor values for a Sallen key with reduced gain:
                     R/b=1354.5/(1/11)=14899.5Ω
 
               R/((1-b))=1354.5/((1-1/11))=1489.95Ω
+
+![image](https://github.com/user-attachments/assets/c0d4bdb1-707d-40c5-930f-d96ee8a09547)
+MultiSim of my 2-stage reduced gain sallen key circuit
+
+![image](https://github.com/user-attachments/assets/bd780d65-ccb7-4ba2-b386-052e74895414)
+FRA of the peak detector working
+
+
+2) The second phase was a peak detector to detect the peak of 25 kHz and would output 0V when 25 kHz wasn't detected.
+   ![image](https://github.com/user-attachments/assets/57a6a3fc-b61c-44df-b8ff-ec4c3afe5aab)
+   25 kHz detected
+
+   ![image](https://github.com/user-attachments/assets/86d7e7e6-ed9e-493d-b6a5-cd6fe6fa0091)
+   Both 10 kHz and 17 kHz are being transmitted, the peak detector outputs 0V
+
+   
+3) The third phase was a comparator which outputed 5V when the peak detector was outputing a voltage of 2V which caused the LED to light up
+
+![image](https://github.com/user-attachments/assets/569e3f61-b73f-4451-bb5d-f85bd6860917)
+Working ciruit detecting 25 kHz
 
